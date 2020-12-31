@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎊🎉Season Greetings🎊🎉</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>  
+    <!--js link-->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+     <script src="./js/snow.js"></script>
+    <!--audio-->
+    <audio controls autoplay loop hidden>
+         <source src="/music/Andy Williams - It s The Most Wonderful Time Of The Year (Music Video).mp3"
+         type="audio/mp3" volume="100"></source>
+    </audio>
+  <!--snow effect-->
+   <div id="snow"></div>
+
+   <!--body-->
+   <section >
+       <!--circle-->
+       <div class="circle"></div>
+       <!--header-->
+         <header>
+             <!--logo-->
+                 <a href="#">
+                     <img src="./images/logo.png" class="logo">
+                 </a>
+            <!--navbar-->
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="nav">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Contact Us</a></li>
+            </ul>
+           <!--logo2-->
+            <a href="#">
+                <img src="./images/tree logo.png" class="lastLogo">
+            </a>
+         </header>   
+         
+         <!--content-->
+         <div class="content">
+            <div class="textBox">
+              <h2>Season's Greetings✨🎉</h2>
+               <p>Sending you my heartfelt thanks
+                    and wishing that may this holiday season
+                    fill your heart and home with happiness and joy
+                    that last forever.<br> 🎇🎇
+               </p>     
+            </div>
+         <!--slider--> 
+            <div class="imageBox">
+                 <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                       <div class="swiper-slide"><img src="images/bells.jpg"></div> 
+                       <div class="swiper-slide"><img src="images/cookies.jpg"></div> 
+                       <div class="swiper-slide"><img src="images/gifts.jpg"></div> 
+                       <div class="swiper-slide"><img src="images/gifts2.jpg"></div> 
+                       <div class="swiper-slide"><img src="images/tree2.jpg"></div>
+                       <div class="swiper-slide"><img src="images/light.jpg"></div> 
+                       <div class="swiper-slide"><img src="images/decor-1.jpg"></div>  
+                       <div class="swiper-slide"><img src="images/box.jpg"></div>  
+                   </div>
+                       <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+
+                      <!-- Add Arrows -->
+                 <div class="swiper-button-prev"></div>
+                 <div class="swiper-button-next"></div>
+               </div>
+           </div> 
+       </div>
+
+        <ul class="mediaLogo">
+            <li><a href="#"><img src="./images/icons/facebook.png"></a></li>
+            <li><a href="#"><img src="./images/icons/instagram.png"> </a></li>
+            <li><a href="#"><img src="./images/icons/twitter.png"> </a></li>  
+        </ul>
+   </section>
+   <script>
+    //for the slider
+   var swiper = new Swiper('.swiper-container', {
+   effect: 'flip',
+   grabCursor: true,
+   pagination: {
+     el: '.swiper-pagination',
+   },
+   navigation: {
+     nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+   },
+});
+
+function toggleMenu() {
+    const menuToggle = document.querySelector('.toggle');
+    const nav = document.querySelector('.nav');
+    menuToggle.classList.toggle('active');
+    nav.classList.toggle('active');
+}
+   </script>
+</body>
+</html>
