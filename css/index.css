@@ -120,7 +120,7 @@ header .nav a img{
     background-size: cover;
     width: 300px;
     height: 300px;
-    padding:50px;
+    padding: 50px;
 }
 .swiper-slide img{
     width:300px;
@@ -154,6 +154,7 @@ section{
 {
     max-width:100%;
 }
+
 .swiper-slide{
     height:300px;
 }
@@ -183,18 +184,17 @@ header .nav.active{
     position: relative;
     width: 35px;
     height:35px;
-    background-image: url('/images/menu.png');
+    background-image: url('../images/menu.png');
     background-size:35px;
     background-repeat:no-repeat;
     background-position: center;
     cursor:pointer;
     z-index: 10000;
 }
-
 .toggle.active{
     position:fixed;
     right: 40px;
-    background-image: url('/images/close.png');
+    background-image: url('../images/close.png');
     background-size:30px;
     background-repeat:no-repeat;
     background-position: center;
@@ -225,5 +225,22 @@ header .nav.active{
 .mediaLogo li a:hover{
     background-color: #e21548;
     transform: translateY(-10px);
+}
+.swiper-container {
+    width: 320px;
+    height: 320px;
+    padding: 27px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 260px;
+    height: 260px;
+    padding: 35px;
+}
+.swiper-slide img{
+    width:245px;
+    height:245px;
+    align-items: center;
 }
 }
